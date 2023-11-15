@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(0, "");
+    int n1;
+    cout << "ВЕДИТЕ ЧИСЛО: ";
+	cin >> n1;
+    int nol1 = 0;
+    int nol = 0;
+    if (n1 == 0) 
+    {
+        nol1 = 0;
+        cout << "вы вели ноль - " << nol1 << endl;
+    }
+    
+    else
+    {
+        while (n1 != 0)
+        {
+            n1 /= 10;
+			nol++;
+        }
+        cout << "количество цифр - " << nol << endl;
+    }
+	
+	return 0;
+}

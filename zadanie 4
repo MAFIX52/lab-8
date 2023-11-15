@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+    int a;
+    cout << "введите число: ";
+	cin >> a;
+  
+    
+    if (a == 0)
+    {
+        cout << "вы ввели ноль";
+    }
+
+    else if (a > 0)
+    {
+        cout << "вы ввнели положительное число";
+    }
+    else if (a < 0)
+    {
+        cout << "вы ввели отрицательное число";
+    }
+	return 0;
+}
